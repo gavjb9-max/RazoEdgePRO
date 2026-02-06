@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leave a review for Razor Edge PRO - Professional Mobile Knife Sharpening in Kent & SE London">
+    <title>Leave a Review | Razor Edge PRO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-black: #1a1a1a;
+            --secondary-grey: #4a4a4a;
+            --light-grey: #f5f5f5;
+            --accent-blue: #2563eb;
+            --accent-orange: #f97316;
+            --accent-green: #25D366;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-black);
+            background: var(--light-grey);
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-container img {
+            height: 60px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-black);
+        }
+
+        .back-button {
+            background: var(--accent-orange);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #ea580c;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .review-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-black);
+            margin-bottom: 1rem;
+        }
+
+        .emoji {
+            font-size: 4rem;
+            margin: 1rem 0;
+        }
+
+        .subtitle {
+            color: var(--secondary-grey);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .qr-section {
+            background: var(--light-grey);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .qr-code {
+            max-width: 250px;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+            border: 4px solid var(--white);
+            border-radius: 10px;
+        }
+
+        .scan-text {
+            font-size: 1.1rem;
+            color: var(--secondary-grey);
+            margin-top: 1rem;
+        }
+
+        .button-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .review-button {
+            background: var(--accent-green);
+            color: var(--white);
+            padding: 1.2rem 2rem;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .review-button:hover {
+            background: #1fb855;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+        }
+
+        .stars {
+            font-size: 2rem;
+            color: #fbbf24;
+            margin: 1rem 0;
+        }
+
+        .info-box {
+            background: #fff3cd;
+            border-left: 4px solid var(--accent-orange);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .info-box h3 {
+            color: var(--accent-orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box p {
+            color: var(--secondary-grey);
+            margin: 0.5rem 0;
+        }
+
+        .thank-you {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-black);
+            margin: 2rem 0 1rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-black);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .logo-container img {
+                height: 50px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .review-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .container {
+                margin: 2rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Pro Sharpener Logo">
+                <span class="logo-text">Razor Edge PRO</span>
+            </div>
+            <a href="index.html" class="back-button">← Back to Home</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="review-card">
+            <div class="emoji">⭐</div>
+            <h1>Leave Us a Review!</h1>
+            <p class="subtitle">Your feedback helps us grow and helps others find quality knife sharpening</p>
+
+            <div class="stars">★★★★★</div>
+
+            <!-- QR Code Section -->
+            <div class="qr-section">
+                <p style="font-weight: 600; color: var(--primary-black); margin-bottom: 1rem;">Scan with your phone camera:</p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://g.page/r/CVZXdHm1V_TYEAI/review" 
+                     alt="Review QR Code" 
+                     class="qr-code">
+                <p class="scan-text">Opens Google review page instantly</p>
+            </div>
+
+            <!-- Button Section -->
+            <div class="button-section">
+                <a href="https://g.page/r/CVZXdHm1V_TYEAI/review" target="_blank" class="review-button">
+                    📝 Write a Google Review
+                </a>
+            </div>
+
+            <!-- Info Box -->
+            <div class="info-box">
+                <h3>Why Your Review Matters:</h3>
+                <p>✓ Helps local customers find professional sharpening services</p>
+                <p>✓ Supports our small family business</p>
+                <p>✓ Takes less than 60 seconds</p>
+                <p>✓ Your honest feedback helps us improve</p>
+            </div>
+
+            <p class="thank-you">Thank you for choosing Razor Edge PRO!</p>
+            <p style="color: var(--secondary-grey);">We really appreciate your business and your feedback.</p>
+
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--light-grey);">
+                <p style="font-weight: 600; color: var(--primary-black);">Need to book another appointment?</p>
+                <p style="color: var(--secondary-grey); margin: 0.5rem 0;">Call: <a href="tel:+447956491936" style="color: var(--accent-orange); text-decoration: none; font-weight: 600;">07956 491936</a></p>
+                <p style="color: var(--secondary-grey);">WhatsApp: <a href="https://wa.me/447956491936" target="_blank" style="color: var(--accent-green); text-decoration: none; font-weight: 600;">Click to message</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>Razor Edge PRO</h3>
+            <p>Professional Mobile Knife Sharpening</p>
+            <p style="margin-top: 1rem;">Serving Kent & Southeast London</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">Maidstone • Tonbridge • Bexleyheath • Welling • Sevenoaks • Charlton • West Malling</p>
+        </div>
+    </footer>
+</body>
+</html>
